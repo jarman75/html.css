@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">   
+<head>    
+    <meta charset="UTF-8"/>
+    <title>Documento básico</title>
+    <link href="estilos.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <h1>Esto es HTML5</h1>
+    <p>La fecha de hoy es: <time datetime="28/07/2020">28 de julio</time></p>
+    <p>La nueva versión del HTML es el <mark>HTML5</mark>.</p>
+    <p>Usted ha obtenido la nota de 8 sobre 10: 
+        <meter value="8" min="0" max="10"></meter>
+    </p>
+    <details>
+        <summary>Haga click aqueí para ver el detalle de su pedido</summary>
+        <ul>
+            <li>BatCasco</li>
+            <li>Mascara murcielago</li>
+            <li>BatCapa</li>
+        </ul>
+    </details>
+    <p>Probando elementos (word break) <wbr>para proponer cortes <wbr>dentro <wbr>de las palabras o <wbr>frases, al dimensionar página en el navegador.</p>
+    <p>
+        Progresión de la tarea: <progress id="p" value="40" max="100">40%</progress>
+    </p>
+    <p>Fotografía de un pajarraco.</p>
+    <figure>
+        <img src="pajaro-baja.jpg" srcset=
+            "pajaro-baja.jpg 1x,
+            pajaro-media.jpg 2x,
+            pajaro-alta.jpg 3x" />
+        <figcaption>pajarraco</figcaption>
+    </figure>
+    
+     <button id="muestra">Muestra</button>
+     <dialog id="mi-ventana">
+         <p>Contenido ventana dialog. Aquí va todo el contenido de la ventana que se auto-ajustará según estilos css.</p>
+         <button id="cerrar">Cerrar</button>
+     </dialog>
+
+     <script src="scripts.js"></script>     
+</body>
+</html>

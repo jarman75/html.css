@@ -1,0 +1,9 @@
+#mi-ventana {
+    background-color: #eee;
+    padding: 5px;
+    border: 1px solid #333;
+    width: 400px;
+}
+#mi-ventana p {
+    margin: 0;
+}
