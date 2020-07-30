@@ -1,0 +1,77 @@
+/* selector universal */
+* {
+    font-style: italic;
+}
+/* selector de elmento o de tipo */
+p {    
+    color: green;
+}
+/* selector de clase */
+.contenido2 {
+    color: blue;
+}
+/* selector de clase de un elemento */
+p.contenido2 {
+    color: red;
+}
+/* selector de descendientes */
+ol li {
+    font-style: normal;
+    color: salmon;
+}
+
+/* selector adyacente */
+h1+h2 {
+    font-style: normal;
+    color: teal;
+}
+
+/* selector de ID */
+#name {
+    color: tomato;
+    font-style: normal;
+}
+
+/* pseudo-clase first-child*/
+ul li:first-child {
+    color: purple;
+}
+
+/* pseudo-clase de vinculos */
+a:link{
+    font-style: normal;
+    color: seagreen;
+}
+a:visited {    
+    color: orange;
+}
+/* pseudo-clases dinamicas */
+a:hover {
+    font-size: larger;
+}
+a:active {
+    font-size: smaller;
+}
+.campotexto:focus{
+    border-color: blue;
+}
+
+/* pseudo-elementos de primera letra */
+h1:first-letter {
+    font-size: larger;   
+    border: 1px solid red; 
+}
+
+/* pseudo-elementos de primera liena */
+p:first-line {
+    font-size: smaller;
+}
+
+/* pseudo-elementos antes y despues */
+h1::before {
+        content: url(pajaro-baja.jpg);
+} 
+h1::after {
+    content: url(pajaro-baja.jpg);
+} 
+
