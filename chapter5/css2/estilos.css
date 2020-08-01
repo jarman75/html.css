@@ -57,7 +57,7 @@ a:active {
 }
 
 /* pseudo-elementos de primera letra */
-h1:first-letter {
+h6:first-letter {
     font-size: larger;   
     border: 1px solid red; 
 }
@@ -75,3 +75,7 @@ h1::after {
     content: url(pajaro-baja.jpg);
 } 
 
+/* agrupación de selectores */
+h6, input.campotexto {
+    font-stretch: extra-expanded;
+}

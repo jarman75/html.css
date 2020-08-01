@@ -1,0 +1,17 @@
+/* selector adyacente , todos los h2 posteriores a un h1*/
+h1~h2 {
+    font-style: italic;
+}
+
+/* selector de atriburo - empieza por esp */
+[lang^="esp"] {
+    color: darksalmon;
+}
+/* selector de atriburo - termina por -españa */
+[title$="-españa"]::after {
+    content: url("spain-1.png");
+}
+/* selector de atributo - contenga al menos una vez el valor */
+[href*="item"] {
+    border: darkviolet solid 1px;
+}
