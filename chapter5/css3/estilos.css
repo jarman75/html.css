@@ -15,3 +15,61 @@ h1~h2 {
 [href*="item"] {
     border: darkviolet solid 1px;
 }
+/* vinculo mailto */
+a[href^="mailto"] {
+    background: url(spain-1.png) left center no-repeat;
+    padding-left: 30px;
+}
+/* vinculos de descarga */
+
+a{
+    text-decoration: none;
+}
+a[href$=".pdf"] {
+    font-style: italic;
+}
+a[href$=".zip"] {
+    font-weight: bold;
+}
+/* pseudo clase de vinculo */
+a:target {
+    background-color: gold;
+}
+
+/* pseudo clases estructurales */
+#especial {
+    width: 400px;
+    border: solid 1px black;
+}
+/* :last-child seleccional ultimo hijo */
+#especial p:first-child, #especial p:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* :nth-child(x)  seleccionar hijo concreto */
+ul li:nth-child(3) {    
+    font-style: italic;
+} 
+/* :nth-child(even) hijos pares  - :nth-child(odd) hijos impares */
+ul li:nth-child(even) {
+    background-color: lightblue;
+    color: rebeccapurple;
+}
+ul li:nth-child(odd) {
+    background-color: darkcyan;
+    color: gold;
+}
+/* el argumento (x) puede ser un calculo mátematico  :an+b. n para representar una varialbe que comienza con 0
+   y que se incrementa con valores distintos de 1. el valor n puede ser positivo o negativo. */
+ol li:nth-child(n+3) {
+    font-weight: bold;
+}
+ol li:nth-child(3n) {
+    background-color: springgreen;
+}
+
+/* primer y ultimo elemento de un tipo determinado */
+td:first-of-type, td:last-of-type {
+    background-color: #ececec;
+}
+
