@@ -72,4 +72,26 @@ ol li:nth-child(3n) {
 td:first-of-type, td:last-of-type {
     background-color: #ececec;
 }
+/* :nth-of-type() - similar a :nth-child(), pero seleccion por tipo elemento. */
+strong:nth-of-type(2) {
+    background-color: gold;
+}
+/* :only-child elementos hijo únicao*/
+strong:only-child {
+    background-color: darkolivegreen;
+}
 
+/* :only-of-type elementos hijo único de un tipo predeterminado */
+strong:only-of-type {
+    font-style: italic;
+}
+
+/* :empty elementos vacios */
+li:empty {
+    border: solid 2px lawngreen;
+}
+
+/* :not()  todos los elementos excepto el elemento seleccionado*/
+#pnot>:not(u) {
+    background-color: gold;
+}
