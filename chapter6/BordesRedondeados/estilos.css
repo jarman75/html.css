@@ -1,0 +1,43 @@
+/* 
+    se admiten en contenedores div, header, section...
+*/
+
+#esquinas-iguales {
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    height: 90;
+    background-color: lightblue;
+}
+
+#esquinas-diferentes {
+    border-radius: 10px 30px 40px 20px;  /* sup-izq sup-dech inf-dech inz-izq */
+    position: absolute;
+    top: 130px;
+    left: 10px;
+    width: 200px;
+    height: 90;
+    background-color: lightblue;
+}
+
+#esquinas-en-elipse {
+    border-radius: 40px/20px;
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    width: 200px;
+    height: 90;
+    background-color: lightblue;
+}
+
+#esquinas-en-elipse-2 {
+    border-radius: 40px 30px 50px 20px / 20px 10px 40px 10px;
+    position: absolute;
+    top: 370px;
+    left: 10px;
+    width: 200px;
+    height: 90;
+    background-color: lightblue;
+}

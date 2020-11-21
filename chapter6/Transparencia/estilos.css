@@ -1,0 +1,11 @@
+/* 
+    opacity -> 0 transparente - opaco 1
+*/
+
+#transp {
+    width: 250px;
+    padding: 0;
+    background-color: lightgreen;
+    opacity: .3;
+    text-align: center;
+}

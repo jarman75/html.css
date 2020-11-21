@@ -1,0 +1,42 @@
+/* 
+    Modo HSB  
+    H -> Tono: el color. rojo es 0.
+    S -> Saturación: pureza del tono en %. 100% puro - apagado 0%
+    B -> Brillo: cantidad de luz en %. 100% blanco - negro 0%
+    Transparencia: 1 opaco - transparente 0
+
+    Modo RGBA
+    R -> Cantida de rojo
+    G -> Cantidad de verde
+    B -> Cantidad de azul
+    A -> Transparencia: 1 opaco - transparente 0
+
+
+
+*/
+
+#rojo {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    width: 100px;
+    height: 50px;
+    background-color: rgba(255, 0, 0, .5)
+}
+
+#verde {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: hsl(153, 39%, 74%);
+}
+#amarillo {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    background-color: hsl(40, 50%, 80%, .5);
+}
