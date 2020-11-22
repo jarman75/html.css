@@ -1,0 +1,59 @@
+/* 
+    https://www.w3.org/TR/css3-images/
+
+    lineales -> linear-gradiant()
+    - angle: ángulo en grados o desgradado.
+    - to: posición de partida del degradado. top , right, bottom o left.
+    - color-stop: uno o varios colores del degradado (se puede incluir %).
+
+    radiales -> radial-gradiant()
+    - position: posición inicial del degradado
+    - shapte: forma (circle o ellipse)
+    - size: tamaño (closest-side, farthest-side, closest-corner o farthest-cornet)
+    - length: radio del circulo para la forma circle
+    - color-stop: uno o varios colores del degradado (se puede incluir %).
+
+    repetitivos -> repeating-linear-gradient y repeating-radial-gradient
+*/
+
+.degradado-tres-colores {
+    background: linear-gradient(to top, blue, white, red);
+    border: 1px solid #333;
+    width: 200px;
+    height: 100px;
+}
+
+.degradado-dos-colores-angular {
+    background: linear-gradient(-45deg, blue, white 50%);
+    border: 1px solid #333;
+    width: 200px;
+    height: 100px;
+}
+
+.degradado-tres-colores-radial {
+    background: radial-gradient(red, white 50%, green);
+    border: 1px solid #333;
+    width: 200px;
+    height: 100px;
+}
+
+.degradado-tres-colores-radial2 {
+    background: radial-gradient(farthest-side at left bottom, red, white, green);
+    border: 1px solid #333;
+    width: 200px;
+    height: 100px;
+}
+
+.degradado-lineal-repetitivo {
+    background: repeating-linear-gradient(red, white 20px, red 10px);
+    border: 1px solid #333;
+    width: 200px;
+    height: 100px;
+}
+
+.degradado-radial-repetitivo {
+    background: repeating-radial-gradient(red, white 20px, red 10px);
+    border: 1px solid #333;
+    width: 200px;
+    height: 100px;
+}
