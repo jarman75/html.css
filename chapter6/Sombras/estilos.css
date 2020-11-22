@@ -1,0 +1,93 @@
+/* 
+    box-shadow --> https://www.w3.org/TR/css-backgrounds-3/#the-box-shadow
+
+    distancia horizontal
+    distantica vertical
+    valor de difuminado,  por defecto 0
+    extensión -> punto medio de degradado, por defecto 0
+    color
+    posición -> inset (hacia interior) outset (hacia externior - por defecto)
+
+*/
+
+#miCaja {    
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    box-shadow: 10px 15px 8px 2px rgb(12,34,56);     
+}
+
+#miCaja2 {    
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    box-shadow: 10px 15px 0 0 grey;     
+}
+
+#miCaja3 {    
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    box-shadow: 10px 10px 5px 0 grey;     
+}
+
+#miCaja4 {    
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    box-shadow: 10px 10px 5px 5px grey;     
+}
+
+#miCaja5 {    
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    box-shadow: 10px 10px 5px -5px grey;     
+}
+
+#miCaja6 {    
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    width: 300px;
+    height: 100px;
+    background-color: lightblue;
+    box-shadow: 0 0 20px 0 grey;     
+}
+
+#miCaja7 {    
+    position: absolute;
+    top: 460px;
+    left: 10px;
+    width: 300px;
+    height: 100px;
+    background-color: lightyellow;
+    box-shadow: 5px 5px 3px 2px #ccc, 
+    10px 15px 8px 2px rgb(12,34,56);     
+}
+
+#miCaja8 {    
+    position: absolute;
+    top: 460px;
+    left: 350px;
+    width: 300px;
+    height: 100px;
+    background-color: lightyellow;
+    box-shadow: 5px 3px 2px #ccc inset, 
+    10px 15px 8px 2px rgb(12,34,56);     
+}
