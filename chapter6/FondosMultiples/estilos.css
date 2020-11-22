@@ -1,0 +1,157 @@
+/* 
+    https://www.w3.org/TR/css-backgrounds-3/
+
+*/
+
+#imagenesMultiples {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    height: 80px;
+    border: 1px solid #333;
+    background: url("uno.png") top left no-repeat,
+                url("dos.png") top right no-repeat,
+                url("tres.png") bottom left no-repeat,
+                url("cuatro.png") bottom right no-repeat;
+}
+
+#imagenesMultiples2 {
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    width: 150px;
+    height: 80px;
+    border: 1px solid #333;
+    background: url("uno.png") top left no-repeat,
+                url("tigre.jpg") top right no-repeat,
+                url("tres.png") bottom left no-repeat,
+                url("cuatro.png") bottom right no-repeat;
+}
+
+#posicion-inicial {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    width: 250px;
+    height: 150px;
+    border: 10px dotted #333;
+    padding: 10px;
+    background: url("surikata.jpg") no-repeat;
+    background-clip: border-box;
+}
+
+#posicion-inicial2 {
+    position: absolute;
+    top: 200px;
+    left: 320px;
+    width: 250px;
+    height: 150px;
+    border: 10px dotted #333;
+    padding: 10px;
+    background: url("surikata.jpg") no-repeat;
+    background-clip: padding-box;
+}
+
+#posicion-inicial3 {
+    position: absolute;
+    top: 520px;
+    left: 10px;
+    width: 250px;
+    height: 150px;
+    border: 10px dotted #333;
+    padding: 10px;
+    background: url("surikata.jpg") no-repeat;
+    background-clip: content-box;
+}
+
+#recortar {
+    position: absolute;
+    top: 520px;
+    left: 320px;
+    width: 250px;
+    height: 150px;
+    border: 10px dotted #333;
+    padding: 10px;
+    background-color: lightblue;
+    background-clip: border-box;
+}
+
+#recortar2 {
+    position: absolute;
+    top: 790px;
+    left: 10px;
+    width: 250px;
+    height: 150px;
+    border: 10px dotted #333;
+    padding: 10px;
+    background-color: lightblue;
+    background-clip: padding-box;
+}
+
+#recortar3 {
+    position: absolute;
+    top: 790px;
+    left: 320px;
+    width: 250px;
+    height: 150px;
+    border: 10px dotted #333;
+    padding: 10px;
+    background-color: lightblue;
+    background-clip: content-box;
+}
+
+#tamaño {
+    position: absolute;
+    top: 1120px;
+    left: 10px;
+    width: 250px;
+    height: 150px;
+    border: 1px solid #333;
+    background: url("surikata.jpg") no-repeat;
+    background-size: 25%;
+}
+
+#tamaño2 {
+    position: absolute;
+    top: 1120px;
+    left: 320px;
+    width: 250px;
+    height: 150px;
+    border: 1px solid #333;
+    background: url("surikata.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#tamaño3 {
+    position: absolute;
+    top: 1300px;
+    left: 10px;
+    width: 250px;
+    height: 150px;
+    border: 1px solid #333;
+    background: url("surikata.jpg") no-repeat;
+    background-size: 200px 100px;
+}
+
+#tamaño4 {
+    position: absolute;
+    top: 1300px;
+    left: 320px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #333;
+    background: url("surikata.jpg") no-repeat;
+    background-size: cover;
+}
+
+#tamaño5 {
+    position: absolute;
+    top: 1500px;
+    left: 10px;
+    width: 150px;
+    height: 50px;
+    border: 1px solid #333;
+    background: url("surikata.jpg") no-repeat;
+    background-size: contain;
+}
