@@ -1,0 +1,21 @@
+/* 
+    column-count: número de columnas
+    column-width: ancho de cada columna
+    column-gap..: espacio entre cada columna
+*/
+
+#columnas3{
+  width: 600px;
+  column-count: 3;
+  column-width: 150px;
+  column-gap: 10px;
+  padding: 10px;
+  column-rule: 1px solid grey;
+  border: 1px solid #000;  
+}
+#columnas3 p, #columnas3 h4 {
+  margin: 0;
+}
+#columnas3 h4.alto-col {
+  break-before: column;
+}
