@@ -1,0 +1,29 @@
+/* 
+    https://www.w3.org/TR/css-text-decor-3/
+
+    text-decoration
+    text-emphasis
+*/
+
+.subrayado-color-rojo{
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;  
+}
+
+.emphasis{
+  text-emphasis: triangle blue;
+  -webkit-text-emphasis: triangle blue;  
+  text-emphasis-position: under;
+  -webkit-text-emphasis-position: under;
+}
+.emphasis-circle{
+  text-emphasis: open double-circle red;
+  -webkit-text-emphasis: open double-circle red;
+}
+
+h1 {
+  text-shadow: 8px 8px 5px rgb(100, 50, 200);
+}
+
+
