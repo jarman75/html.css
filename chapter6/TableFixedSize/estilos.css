@@ -11,10 +11,13 @@ td, th {
     width: 10%;
     border-bottom: 1px dotted #ccc;    
     /*border-radius: 0 10px 0px 0;*/
-    text-align: center;    
+    text-align: center;
+    font-weight: normal;
+    color: black;
 }
 td:hover {
-    color: blue;
+    /* color: blue; */
+    font-weight: bold;
     border-bottom: 2px solid red;
 }
 
@@ -23,18 +26,20 @@ td:hover {
     width: 80%;        
     border: solid #ccc 1px;    
     box-sizing: border-box;    
+    display: none;    
 }
 .bloque p {
     float: left;   
     margin: 0 5px 0 0;    
     width: 90%; 
 }
-.bloque h3 {                    
+.bloque h4{                    
     width: 5%;
     writing-mode: vertical-lr;    
     float: left;
     margin: 0 5px 0 0;   
     text-align: end;
+    color: blue;
 }
 .clearfix::after {
     content: "";

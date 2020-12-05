@@ -3,32 +3,27 @@
 <head>    
     <meta charset="UTF-8"/>
     <title>Documento básico</title>
-    <link href="estilos.css" rel="stylesheet" />    
+    <link href="estilos.css" rel="stylesheet" />
+    
 </head>
 <body>    
-    <table>
-        <!-- <thead>
-            <tr>
-                <th>#</th>
-                <th>IMDB top 10 películas</th>
-                <th>Año</th>
-            </tr>
-        </thead> -->
+    <table>        
         <tbody>
             <tr>
-                <td>Bloque 01</td>
-                <td>Bloque 02</td>
-                <td>Bloque 03</td>
-                <td>Bloque 04</td>
-                <td>Bloque 05</td>
-                <td>Bloque 06</td>
-                <td>Bloque 07</td>
-                <td>Bloque 08</td>
-                <td>Bloque 09</td>
-                <td>Bloque 10</td>                
+                <td id="01" onclick="mostrarBloque(this);">Bloque 01</td>
+                <td id="02" onclick="mostrarBloque(this);">Bloque 02</td>
+                <td id="03" onclick="mostrarBloque(this);">Bloque 03</td>
+                <td id="04" onclick="mostrarBloque(this);">Bloque 04</td>
+                <td id="05" onclick="mostrarBloque(this);">Bloque 05</td>
+                <td id="06" onclick="mostrarBloque(this);">Bloque 06</td>
+                <td id="07" onclick="mostrarBloque(this);">Bloque 07</td>
+                <td id="08" onclick="mostrarBloque(this);">Bloque 08</td>   
+                <td id="09" onclick="mostrarBloque(this);">Bloque 09</td>
+                <td id="10" onclick="mostrarBloque(this);">Bloque 10</td>  
+                              
             </tr>
             <tr>
-                <td>Bloque 11</td>
+                <td id="11" onclick="mostrarBloque(this);">Bloque 11</td>
                 <td>Bloque 12</td>
                 <td>Bloque 13</td>
                 <td>Bloque 14</td>
@@ -43,7 +38,7 @@
     </table>
     
     <div id="bloque-01" class="bloque clearfix">
-        <h3>Bloque 01</h3>
+        <h4>Bloque 01</h4>
         <p>
             Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
             Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
@@ -53,7 +48,7 @@
         </p>
     </div>
     <div id="bloque-02" class="bloque clearfix">
-        <h3>Bloque 02</h3>
+        <h4>Bloque 02</h4>
         <p>
             Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
             Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
@@ -67,5 +62,21 @@
             Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
         </p>
     </div>
+    <div id="bloque-11" class="bloque clearfix">
+        <h4>Bloque 11</h4>
+        <p>
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
+        </p>
+    </div>
+    <script src="myScript.js"></script>
 </body>
 </html>
