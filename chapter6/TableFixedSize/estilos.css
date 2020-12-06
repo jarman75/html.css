@@ -3,46 +3,92 @@
 */
 
 table {    
-    border-spacing: 0;
+    border-spacing: 2px;
     width: 80%;
 }
 
-td, th {
+td{
     width: 10%;
-    border-bottom: 1px dotted #ccc;    
-    /*border-radius: 0 10px 0px 0;*/
-    text-align: center;
+    background-color: rgb(233, 233, 233, 0.3);    
+    border: 1px solid #ccc;  
+    border-radius: 8px 8px 0 0;
+    text-align: left;
     font-weight: normal;
     color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-stretch: extra-condensed;
+    font-size: medium;
 }
 td:hover {
     /* color: blue; */
-    font-weight: bold;
+    /* font-weight: bold; */
+    background-color: rgb(233, 233, 233); 
     border-bottom: 2px solid red;
+}
+td::before {
+    content: url("warning-icon-png-2775x.png");
+    justify-content: left;
 }
 
 .bloque {
+    background-color: rgb(233, 233, 233, 0.3); 
     padding: 10px;    
     width: 80%;        
-    border: solid #ccc 1px;    
+    border: solid #ccc 1px;   
+    border-radius: 0 0 20px 20px; 
     box-sizing: border-box;    
     display: none;    
 }
 .bloque p {
     float: left;   
     margin: 0 5px 0 0;    
-    width: 90%; 
+    width: 90%;
 }
 .bloque h4{                    
-    width: 5%;
+    
     writing-mode: vertical-lr;    
     float: left;
     margin: 0 5px 0 0;   
-    text-align: end;
+    text-align: center;
     color: blue;
 }
+
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
+}
+
+form, fieldset, input, textarea {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: none;
+}
+
+label {
+      float: left;
+      clear: left;
+      margin: 11px 20px 0 0;
+      width: 15%;
+      text-align: right;
+      font-size: 10px;
+      color: #445668;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 0px #f2f2f2;
+}
+
+input {
+      width: 60%;
+      height: 35px;
+      padding: 5px 20px 0px 20px;
+      margin: 0 0 20px 0;
+      background: #bad7f1;
+      border-radius: 5px;
+      font-family: sans-serif;
+      font-size: 10px;
+      color: #333333;
+      text-transform: uppercase;
+      text-shadow: 0px -1px 0px #334f71;
   }

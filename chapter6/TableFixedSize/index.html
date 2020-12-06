@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">   
-<head>    
-    <meta charset="UTF-8"/>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
     <title>Documento básico</title>
     <link href="estilos.css" rel="stylesheet" />
-    
+
 </head>
-<body>    
-    <table>        
+
+<body>
+    <table>
         <tbody>
             <tr>
-                <td id="01" onclick="mostrarBloque(this);">Bloque 01</td>
-                <td id="02" onclick="mostrarBloque(this);">Bloque 02</td>
+                <td id="01" title="Datos personales" onclick="mostrarBloque(this);">Personal</td>
+                <td id="02" title="Datos de contacto" onclick="mostrarBloque(this);">Contacto</td>
                 <td id="03" onclick="mostrarBloque(this);">Bloque 03</td>
                 <td id="04" onclick="mostrarBloque(this);">Bloque 04</td>
                 <td id="05" onclick="mostrarBloque(this);">Bloque 05</td>
                 <td id="06" onclick="mostrarBloque(this);">Bloque 06</td>
                 <td id="07" onclick="mostrarBloque(this);">Bloque 07</td>
-                <td id="08" onclick="mostrarBloque(this);">Bloque 08</td>   
+                <td id="08" onclick="mostrarBloque(this);">Bloque 08</td>
                 <td id="09" onclick="mostrarBloque(this);">Bloque 09</td>
-                <td id="10" onclick="mostrarBloque(this);">Bloque 10</td>  
-                              
+                <td id="10" onclick="mostrarBloque(this);">Bloque 10</td>
+
             </tr>
             <tr>
                 <td id="11" onclick="mostrarBloque(this);">Bloque 11</td>
@@ -32,51 +34,47 @@
                 <td>Bloque 17</td>
                 <td>Bloque 18</td>
                 <td>Bloque 19</td>
-                <td>Bloque 20</td>                
-            </tr>                  
+                <td>Bloque 20</td>
+            </tr>
         </tbody>
     </table>
-    
+
     <div id="bloque-01" class="bloque clearfix">
-        <h4>Bloque 01</h4>
-        <p>
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-        </p>
+        <h4>Datos Personales</h4>
+        <form id="data-01" width="85%">
+            <fieldset>
+                <label for="Nombre">Nombre:</label>
+                <input id="Nombre" maxlength="20" type="text" title="Nombre" placeholder="Nombre" />
+                <label for="Apellidos">Apellidos:</label>
+                <input id="Apellidos" maxlength="80" type="text" title="Apellidos" placeholder="Apellidos" />                
+                <label for="fnacimeinto">Fecha de Nacimiento:</label>
+                <input id="fnacimiento" type="date" title="Fecha Nacimiento" placeholder="Fecha Nacimiento" />
+            </fieldset>
+        </form>
     </div>
     <div id="bloque-02" class="bloque clearfix">
-        <h4>Bloque 02</h4>
-        <p>
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-        </p>
+        <h4>Datos de Contacto</h4>
+        <form id="data-02" width="85%">
+            <fieldset>
+                <label for="Direccion">Dirección:</label>
+                <input id="Direccion" maxlength="100" type="text" title="Dirección" placeholder="Dirección" />
+                <label for="Poblacion">Población:</label>
+                <input id="Poblacion" maxlength="80" type="text" title="Población" placeholder="Población" />
+                <label for="Provincia">Provincia:</label>
+                <input id="Provincia" type="text" title="Provincia" placeholder="Provincia" />
+                <label for="CPostal">Código Postal:</label>
+                <input id="CPostal" maxlength=5 type="number" title="Código Postal" placeholder="Código Postal" />
+                <label for="Telefono">Telefono:</label>
+                <input id="Telefono" maxlength=10 type="tel" title="Telefono" placeholder="Telefono" />
+                <label for="email">Email:</label>
+                <input id="email" type="email" title="e-mail" placeholder="E-Mail" />
+            </fieldset>
+        </form>
     </div>
     <div id="bloque-11" class="bloque clearfix">
-        <h4>Bloque 11</h4>
-        <p>
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-            Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. Esto es el cuerpo del bloque. 
-        </p>
+        <h4>Bloque 11</h4> 
     </div>
     <script src="myScript.js"></script>
 </body>
+
 </html>
