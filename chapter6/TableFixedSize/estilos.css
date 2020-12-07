@@ -10,7 +10,7 @@ table {
 td{
     width: 10%;
     background-color: rgb(233, 233, 233, 0.3);    
-    border: 1px solid #ccc;  
+    border-bottom: 1px solid #ccc;  
     border-radius: 8px 8px 0 0;
     text-align: left;
     font-weight: normal;
@@ -24,6 +24,8 @@ td:hover {
     /* font-weight: bold; */
     background-color: rgb(233, 233, 233); 
     border-bottom: 2px solid red;
+    /* color: rgb(88, 87, 87); */
+    
 }
 td::before {
     content: url("warning-icon-png-2775x.png");
