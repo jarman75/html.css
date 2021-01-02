@@ -5,24 +5,41 @@ div.targetbox {
     background-color: lightblue;
 }
 
-.container {
+div.container {
     display: grid;
     /* grid-template-columns: repeat(5, 1fr); */
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 
 }
-.box {
+div.box {
     border: 3px solid #666;
     background-color: #ddd;
     border-radius: .5em;
     padding: 10px;
     cursor: move;
 }
-.box.over {
+
+li.box {
+    border: 1px solid #666;
+    background-color: #ddd;
+    padding: 10px;
+    cursor: move;    
+}
+
+div.box.over {
     border: 3px dotted #666;
+}
+li.box.over {
+    border-top: 1px solid red;
+}
+
+ul.container {
+    list-style: none;
+    border: 0;
+    padding: 0;    
 }
 
 [draggable] {
-    user-select: none;
+    user-select: none;    
 }

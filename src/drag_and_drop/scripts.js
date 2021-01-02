@@ -1,16 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-    function handleDrop(e) {
-        e.stopPropagation(); // stops the browser from redirecting.
-
-        if (dragSrcEl !== this) {
-            dragSrcEl.innerHTML = this.innerHTML;
-            this.innerHTML = e.dataTransfer.getData('text/html');
-          }
-
-        return false;
-      }
-
     function handleDragStart(e) {
       this.style.opacity = '0.4';
       
@@ -43,6 +32,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
     function handleDragLeave(e) {
       this.classList.remove('over');
+    }
+
+    function handleDrop(e) {
+        e.stopPropagation(); // stops the browser from redirecting.
+
+        if (dragSrcEl !== this) {
+            dragSrcEl.innerHTML = this.innerHTML;
+            this.innerHTML = e.dataTransfer.getData('text/html');
+          }
+
+        return false;
     }
   
     let items = document.querySelectorAll('.container .box');
