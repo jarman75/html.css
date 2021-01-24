@@ -10,10 +10,10 @@
 <body>
     <nav class="menu">
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a id="home" class="active" href="#home" onclick="selectItem(this)">Home</a></li>
+            <li><a id="news" href="#news" onclick="selectItem(this)">News</a></li>
+            <li><a id="contact" href="#contact" onclick="selectItem(this)">Contact</a></li>
+            <li><a id="about" href="#about" onclick="selectItem(this)">About</a></li>
         </ul>
     </nav>
     <article class="contenido">
@@ -31,6 +31,8 @@
         <p>Some text..</p>
         <p>Some text..</p>
     </article>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
