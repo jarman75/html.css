@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formularios</title>
+    <link href="estilos.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <form id="registro" method="#" action="#">
+        <p>
+            <h3>Campo obligatorio (autofocus)</h3>    
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" required autofocus/>        
+        </p>
+        <p>
+            <h3>Valores autorizados (autocomplete off)</h3>
+            <label for="clave">Su constraseña:</label>            
+            <input type="text" pattern="[0-9]{3}-[A-Z]{3}" placeholder="111-AAA" id="clave" autocomplete="off"/>
+        </p>
+        <p>
+            <h3>Redimensión test-area</h3>
+            <label for="comentarios">Comentarios:</label>
+            <br />
+            <textarea name="comentarios" id="comentarios"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" />
+        </p>
+
+    </form>
+
+</body>
+
+</html>

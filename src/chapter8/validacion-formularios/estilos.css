@@ -1,0 +1,7 @@
+#comentarios {
+    width: 200px;
+    height: 90px;
+    border: 1px solid #333;
+    background-color: lightyellow;
+    resize: vertical;
+}
