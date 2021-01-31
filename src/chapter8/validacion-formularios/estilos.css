@@ -5,3 +5,57 @@
     background-color: lightyellow;
     resize: vertical;
 }
+label, input {
+    display: inline-block;
+}
+input {
+    border: solid 1px gray;
+    width: 200px;
+}
+label {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+input[type=submit] {
+    width: 75px;
+    background: none;
+}
+input:focus:valid:not(#enviar) {
+    background: url("verde-min.png") no-repeat 98% center;
+}
+input:focus:invalid {
+    background: url("rojo-min.png") no-repeat 98% center;
+}
+span.noValido {
+    display: none;
+    position: relative;
+    left: 250px;
+    top: 5px;
+    width: 230px;
+    border: solid 1px red;
+    background-color: lightgoldenrodyellow;
+    padding: 3px;
+    text-align: center;
+}
+span.valido {
+    display: none;
+    position: relative;
+    left: 250px;
+    top: 5px;
+    width: 230px;
+    border: solid 1px green;
+    background-color: lightgreen;
+    padding: 3px;
+    text-align: center;
+}
+input:focus:invalid ~ span.noValido, input:focus:valid ~ span.valido {
+    display: block;
+}
+input#edad:out-of-range {
+    background-color: lightpink;
+}
+input#edad:in-range {
+    background-color: limegreen;
+}
+

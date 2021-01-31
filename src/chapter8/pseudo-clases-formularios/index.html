@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formularios</title>
+    <link href="estilos.css" rel="stylesheet" />
+</head>
+
+<body onload="setDefault()">
+    <form id="form1" method="#" action="#">
+        <p>
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" />
+        </p>
+        <p>
+            <label for="edad">Su edad:</label>
+            <input type="text" id="edad" disabled />
+        </p>
+        <p>
+            <input type="radio" name="sexo" id="hombre" value="hombre" />
+            <label for="hombre">hombre</label><br />
+            <input type="radio" name="sexo" id="mujer" value="mujer" />
+            <label for="hombre">mujer</label><br />
+        </p>
+        <p>
+            <input type="checkbox" id="acept" intermediate />
+            <label for="acept">Acepto las condiciones de uso.</label>            
+        </p>
+    </form>
+
+    <script>
+        function setDefault() {                        
+            var x = document.getElementById("acept").indeterminate = true;
+            console.log(x);
+        }
+    </script>
+
+
+</body>
+
+</html>

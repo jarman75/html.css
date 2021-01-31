@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formularios</title>
+    <link href="estilos.css" rel="stylesheet" />
+</head>
+
+<body>
+    
+    <form id="registro" method="#" action="#">
+        <p>
+            
+            <label for="nombre">Su nombre:</label>
+            <input type="text" id="nombre" required />
+            <span class="noValido">Este campo no puede dejarse vacío</span>
+            <span class="valido">El nombre es correcto</span>
+        </p>
+        <p>            
+            <label for="email">Su e-mail:</label>            
+            <input type="email" id="email" required />
+            <span class="noValido">La dirección de correo no es correcta</span>
+            <span class="valido">La dirección de correo es correcta</span>
+        </p>
+        <p>            
+            <label for="edad">Su edad:</label>            
+            <input type="number" id="edad" min="18" max="30" step="2" />
+            <span class="noValido">La edad no es correcta</span>
+            <span class="valido">La edad es correcta</span>
+        </p>
+        <p>
+            <input type="submit" id="enviar" value="Enviar" />
+        </p>
+
+    </form>
+
+</body>
+
+</html>

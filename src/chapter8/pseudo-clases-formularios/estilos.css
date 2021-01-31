@@ -1,0 +1,21 @@
+#acept:checked+label {
+    background-color: gold;
+    font-weight: bold;
+}
+
+#acept:indeterminate+label {    
+    color: lightsalmon;
+}
+
+#hombre:checked+label, #mujer:checked+label {
+    font-style: italic;
+}
+
+:enabled {
+    background-color: lightgreen;
+}
+
+:disabled {
+    background-color: lightcoral;
+}
+
