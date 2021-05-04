@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inayaili form</title>
+  </head>
+  <body>
+    <form id="payment" method="#" action="#">
+      <fieldset>
+        <legend>Your details</legend>
+        <ol>
+          <li>
+            <label for="name">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="First and last name"
+              required
+              autofocus
+            />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="name"
+              placeholder="example@domain.com"
+              required
+            />
+          </li>
+          <li>
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Eg. +4475000000"
+              required
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Delivery address</legend>
+        <ol>
+          <li>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="5" required></textarea>
+          </li>
+          <li>
+            <label for="postcode">Post code</label>
+            <input type="text" name="postcode" id="postcode" required />
+          </li>
+          <li>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" required />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <legend>Card details</legend>
+        <ol>
+          <li>
+            <fieldset>
+              <legend>Card type</legend>
+              <ol>
+                <li>
+                  <input type="radio" name="cardtype" id="visa" />
+                  <label for="visa">VISA</label>
+                </li>
+                <li>
+                  <input type="radio" name="cardtype" id="amex" />
+                  <label for="amex">AmEx</label>
+                </li>
+                <li>
+                  <input type="radio" name="cardtype" id="mastercard" />
+                  <label for="mastercard">Mastercard</label>
+                </li>
+              </ol>
+            </fieldset>
+          </li>
+          <li>
+            <label for="cardnumber">Card number</label>
+            <input type="number" name="cardnumber" id="cardnumber" required />
+          </li>
+          <li>
+            <label for="secure">Security code</label>
+            <input type="number" name="secure" id="secure" required />
+          </li>
+          <li>
+            <label for="namecard">Name on card</label>
+            <input
+              type="text"
+              name="namecard"
+              id="namecard"
+              placeholder="Exact name as on the card"
+              required
+            />
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset>
+        <button type="submit">Buy it!</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
